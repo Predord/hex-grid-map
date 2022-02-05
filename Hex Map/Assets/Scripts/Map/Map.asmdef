@@ -1,0 +1,17 @@
+{
+    "name": "Map",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f8e502779dafd584ab2d35686f253305",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
