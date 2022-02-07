@@ -2,6 +2,7 @@
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
+using HexGridProject.Core;
 
 namespace HexGridProject.Map
 {
@@ -57,11 +58,36 @@ namespace HexGridProject.Map
                     {
                         selectedCells.Remove(currentCell);
                         currentCell.DisableHighlight();
+
+                        for(HexDirection direction = HexDirection.NorthEast; direction <= HexDirection.NorthWest; direction++)
+                        {
+                            HexCell neighbor = currentCell.GetNeighbor(direction);
+
+                            if (neighbor != null && selectedCells.Exists
+                                    (cell => cell.coordinates.X == neighbor.coordinates.X && cell.coordinates.Z == neighbor.coordinates.Z))
+                            {
+                                neighbor.EnableHighlight(Color.red, direction.Opposite());
+                            }                          
+                        }
                     }
                     else
                     {
                         selectedCells.Add(currentCell);
-                        currentCell.EnableHighlight(Color.red);
+
+                        for (HexDirection direction = HexDirection.NorthEast; direction <= HexDirection.NorthWest; direction++)
+                        {
+                            HexCell neighbor = currentCell.GetNeighbor(direction);
+
+                            if (neighbor != null && selectedCells.Exists
+                                    (cell => cell.coordinates.X == neighbor.coordinates.X && cell.coordinates.Z == neighbor.coordinates.Z))
+                            {
+                                neighbor.DisableHighlight(direction.Opposite());
+                            }
+                            else
+                            {
+                                currentCell.EnableHighlight(Color.red, direction);
+                            }
+                        }
                     }
                 }
                 else

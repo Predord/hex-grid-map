@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 8cf14787b95dfd44cbd51826cba7b229
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8410924388983913184
+    second: cell-outline_0
+  - first:
+      213: -8065776655519929736
+    second: cell-outline_1
+  - first:
+      213: 8040418924037009416
+    second: cell-outline_2
+  - first:
+      213: -1549680144297882615
+    second: cell-outline_3
+  - first:
+      213: 6864941282455258696
+    second: cell-outline_4
+  - first:
+      213: 8648486507279167526
+    second: cell-outline_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -89,7 +107,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cell-outline_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 189
+        width: 128
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea3e063b2b99b470800000000000000
+      internalID: 8410924388983913184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cell-outline_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 189
+        width: 128
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87aa81abdda901090800000000000000
+      internalID: -8065776655519929736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cell-outline_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 128
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800fd84596e459f60800000000000000
+      internalID: 8040418924037009416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cell-outline_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 72
+        width: 128
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c06ab8e1e6e7ae0800000000000000
+      internalID: -1549680144297882615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cell-outline_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 128
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84609a079bb254f50800000000000000
+      internalID: 6864941282455258696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cell-outline_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 128
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620322f18a8950870800000000000000
+      internalID: 8648486507279167526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

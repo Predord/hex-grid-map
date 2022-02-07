@@ -142,16 +142,35 @@ namespace HexGridProject.Map
             uiPosition.z = -position.y;
             uiRect.localPosition = uiPosition;
         }
-
+        
         public void DisableHighlight()
         {
-            Image highlight = uiRect.GetChild(0).GetComponent<Image>();
+            for (int i = 0; i < 6; i++)
+            {
+                Image highlight = uiRect.GetChild(i).GetComponent<Image>();
+                highlight.enabled = false;
+            }
+        }
+
+        public void DisableHighlight(HexDirection direction)
+        {
+            Image highlight = uiRect.GetChild((int)direction).GetComponent<Image>();
             highlight.enabled = false;
         }
 
         public void EnableHighlight(Color color)
         {
-            Image highlight = uiRect.GetChild(0).GetComponent<Image>();
+            for(int i = 0; i < 6; i++)
+            {
+                Image highlight = uiRect.GetChild(i).GetComponent<Image>();
+                highlight.color = color;
+                highlight.enabled = true;
+            }
+        }
+
+        public void EnableHighlight(Color color, HexDirection direction)
+        {
+            Image highlight = uiRect.GetChild((int)direction).GetComponent<Image>();
             highlight.color = color;
             highlight.enabled = true;
         }
